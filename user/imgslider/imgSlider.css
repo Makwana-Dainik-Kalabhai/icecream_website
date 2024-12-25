@@ -1,0 +1,15 @@
+/* Image Slider below nav2 */
+
+#slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider #images {
+    display: flex;
+    margin-left: 0%;
+}
+
+#slider #images img {
+    width: 98.9vw;
+}

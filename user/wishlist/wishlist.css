@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2 !important;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+    height: 88%;
+    overflow: auto;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 25px;
+}
+
+/* Wishlist main div */
+#wishlist {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70vw;
+    height: auto;
+    padding-bottom: 3%;
+}
+
+/* Wishlist Header */
+#wishlist_header {
+    margin: 0.1% 0;
+    padding: 2% 4%;
+    border-radius: 7px;
+    background-color: white;
+}
+
+#wishlist_header h1 {
+    color: #ef000f;
+    font-size: 1.8vw;
+}
+
+
+/* Wishlist Items */
+#wishlist_items {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+#box {
+    width: 96%;
+    height: 100%;
+    padding: 1.5% 3%;
+    display: flex;
+    text-decoration: none;
+}
+
+ 
+#items {
+    position: relative;
+    width: 100%;
+    margin: 0.5% 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#items:hover {
+    background-color: rgba(239, 0, 15, 0.1);
+}
+
+#items:hover img {
+    position: relative;
+    z-index: -1;
+}
+
+/* Item Image */
+#item_img {
+    width: fit-content;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+#item_img img {
+    width: 15vw;
+    border-radius: 20px;
+    filter: contrast(115%);
+}
+
+
+/* Item Details */
+#item_details {
+    width: 100%;
+    padding: 1.5% 5%;
+    padding-right: 2%;
+    text-align: justify;
+}
+
+#name {
+    color: green;
+    font-size: 1.7vw;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+#price {
+    color: black;
+    font-size: 1.65vw;
+}
+
+#description {
+    color: gray;
+    font-size: 1vw;
+    line-height: 1.3;
+    margin-top: 2%;
+}
+
+/* Remove btn */
+#remove_item {
+    position: absolute;
+    top: 9%;
+    right: 2%;
+    font-size: 1.2vw;
+    color: #ff1a29;
+}
+
+#remove_item:hover {
+    color: #ef000f;
+}
+
+
+/* If wishlist is empty, then dispay that */
+#empty {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 65%;
+    padding: 5% 7%;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+#empty h1 {
+    font-size: 2.4vw;
+    font-weight: 400;
+    margin-bottom: 15%;
+}
+
+#empty a {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0.8% 2.5%;
+    background-color: #ef000f;
+    text-decoration: none;
+}
+
+#empty a:hover {
+    background-color: rgba(239, 0, 15, 0.8);
+}

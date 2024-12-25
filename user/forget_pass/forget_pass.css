@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#f2f2f2, rgba(239, 0, 15, 0.7));
+    overflow: hidden;
+}
+
+
+/* Main div */
+main {
+    /* position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, 0); */
+    position: relative;
+    top: 15%;
+    margin: 1% auto;
+    width: 800px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0.5px black;
+    /* vertical horizontal blur spread color*/
+    display: flex;
+}
+
+
+/* Left side Image */
+#left_div {
+    width: 100%;
+    margin: 3%;
+    border-radius: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+#left_div img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Main div for right side */
+#forget_pass_form {
+    width: 100%;
+    margin: 3%;
+    padding: 3% 3% 0% 3%;
+}
+
+
+/* Form Error */
+#form_error {
+    color: #ef000f;
+    font-size: 18px;
+    padding: 1% 2%;
+    margin-bottom: 2%;
+    border: 2px solid #ef000f;
+    border-radius: 6px;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
+#form_error i {
+    font-size: 14px;
+    margin-right: 1.5%;
+}
+
+
+/* Main Form */
+p {
+    line-height: 1.1;
+    color: gray;
+    font-size: 15px;
+    margin: 3% 0%;
+    width: 100%;
+}
+
+
+/* Form Body which contains input for email,mobile & send otp link */
+#form_body {
+    width: 100%;
+    position: relative;
+    margin: 5% 0% 6% 0%;
+}
+
+#send_otp {
+    position: absolute;
+    right: 10px;
+    bottom: -35px;
+    color: #00b300;
+    font-size: 17.5px;
+    margin: 10px 0;
+    border: none;
+    background-color: transparent;
+}
+
+#send_otp:hover {
+    color: green;
+}
+
+/* OTP sent successfully Message */
+#otp_sent_successfully {
+    display: inline;
+    position: absolute;
+    right: -55%;
+    bottom: -35px;
+    color: #00b300;
+    line-height: 1.5;
+}
+
+input[type='email'],
+input[type='text'] {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 4px 5px;
+    border: 1px solid black;
+}
+
+
+/* Form footer contains otp input, another-way link & submit btn */
+#form_footer {
+    margin-top: 11%;
+}
+
+#verify_otp input[type='text'] {
+    width: 50%;
+}
+
+#form_footer a {
+    text-decoration: none;
+    display: block;
+    padding: 1% 1%;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+#submit_form {
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0px 0px 0px;
+    color: white;
+    font-size: 27px;
+    background-color: black;
+}
+
+#submit_form:hover {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+
+/* Set Password form */
+#set_pass h1 {
+    color: blue;
+    margin-bottom: 10px;
+}
+
+#set_pass input {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#set_pass input[type="submit"] {
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0px 0px 0px;
+    color: white;
+    font-size: 24px;
+    background-color: black;
+}
+
+#set_pass input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+
+/* Go Back btn */
+#go_back_btn {
+    color: blue;
+    font-size: 1.1vw;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+@media all and (max-width: 850px) {
+    body {
+        height: fit-content;
+        padding: 1%;
+    }
+
+    main {
+        width: 500px;
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    #left_div {
+        margin: 0;
+    }
+
+    #forget_pass_form {
+        width: 95%;
+    }
+}
+
+
+@media all and (max-width: 550px) {
+    body {
+        background: none;
+    }
+
+    main {
+        top: 2%;
+        width: 95%;
+        padding: 2% 2.5%;
+        overflow: hidden;
+        box-shadow: none;
+    }
+
+    #form_error {
+        margin-bottom: 5%;
+    }
+}

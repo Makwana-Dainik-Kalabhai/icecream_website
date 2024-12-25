@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2 !important;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 88%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 25px;
+}
+
+#cart {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: fit-content;
+    height: auto;
+    padding-bottom: 3%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+/* Cart Heading */
+#cart_header {
+    display: flex;
+    width: 100%;
+    background-color: #ff1a29;
+}
+
+#cart_header h1 {
+    text-align: center;
+    width: 14vw;
+    padding: 0.6% 2%;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: white;
+    border-right: 1.5px solid white;
+}
+
+#cart_header h1:last-child {
+    border: none;
+}
+
+
+/* Items */
+#items {
+    display: flex;
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    border-bottom: 2px solid gray;
+}
+
+#items #box {
+    display: flex;
+    text-decoration: none;
+}
+
+#items:hover {
+    background-color: rgba(239, 0, 15, 0.1);
+}
+
+
+#box div {
+    width: 14vw;
+    align-self: center;
+    text-align: center;
+    padding: 0.6% 2%;
+}
+
+
+/* Product Details */
+img {
+    width: 10vw;
+    margin: 6%;
+    border-radius: 20px;
+    filter: contrast(115%);
+}
+
+#items #name {
+    color: green;
+    font-size: 1.6vw;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#items #price {
+    color: black;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+#items #quantity {
+    width: 13vw;
+    align-self: center;
+}
+
+#quantity input[type="number"] {
+    width: 40%;
+    padding: 0 2.5%;
+    font-size: 1.15vw;
+    margin-left: 6%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+#quantity input[type="submit"] {
+    padding: 0 3%;
+    margin-left: 5%;
+    font-size: 1.2vw;
+    color: white;
+    background-color: #404040;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+}
+
+#quantity input[type="submit"]:hover {
+    background-color: black;
+}
+
+
+/* Btns */
+#remove_btn {
+    width: fit-content;
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    color: white;
+    font-size: 1.2vw;
+    color: #ff1a29;
+}
+
+#remove_btn:hover {
+    color: #ef000f;
+}
+
+
+
+
+/* Total Bill */
+#bill {
+    position: fixed;
+    top: 23%;
+    right: 5%;
+    width: 25vw;
+    height: auto;
+    max-height: 33vw;
+    border-radius: 6px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#bill_header {
+    color: white;
+    background-color: #ff1a29;
+}
+
+#bill_header h1 {
+    width: 100%;
+    text-align: center;
+    padding: 0.6% 2%;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+/* Bill Values */
+#bill_values {
+    height: auto;
+    max-height: 20vw;
+    margin: 0 5%;
+    padding: 2% 1%;
+    border-bottom: 2px solid gray;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 25px;
+}
+
+table {
+    width: 100%;
+    height: auto;
+}
+
+th {
+    font-weight: 500;
+}
+
+td {
+    text-align: right;
+}
+
+
+#bill_values th {
+    font-size: 1.3vw;
+    font-weight: 400 !important;
+    text-transform: capitalize;
+}
+
+#bill_values th span {
+    color: gray;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+#bill_values td {
+    font-size: 1.3vw;
+}
+
+
+/* Total value before add charges */
+#total_value {
+    margin: 0 5%;
+    padding: 0.5% 1% 1% 1%;
+}
+
+#total_value th {
+    color: #404040;
+    font-size: 1.3vw;
+}
+
+#total_value td {
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+
+/* Charges */
+#charges {
+    margin: 0 5%;
+    padding: 0 1% 1% 1%;
+    border-bottom: 2px solid gray;
+}
+
+#charges th {
+    color: #ef000f;
+    font-size: 1.1vw;
+}
+
+#charges td {
+    color: #ef000f;
+    font-size: 1.2vw;
+}
+
+
+/* Total Value */
+#total_payble_value {
+    margin: 0 5%;
+    padding: 0 1% 3% 1%;
+}
+
+#total_payble_value th {
+    color: green;
+    font-size: 1.4vw;
+}
+
+#total_payble_value td {
+    color: green;
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+
+/* Bill Btns */
+#bill #btns {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    margin: 0 5%;
+    padding: 2% 1% 3% 1%;
+}
+
+#bill #btns a {
+    width: fit-content;
+    padding: 0.5% 5%;
+    font-size: 1.2vw;
+    color: white;
+    background-color: #ff1a29;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+#bill #btns a:first-child {
+    margin-right: 3%;
+}
+
+#bill #btns a:hover {
+    background-color: #ef000f;
+}
+
+
+
+
+/* If cart is empty, then display this */
+#empty {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 65%;
+    padding: 5% 7%;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+#empty h1 {
+    font-size: 2.4vw;
+    font-weight: 400;
+    margin-bottom: 15%;
+}
+
+#empty a {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0.8% 2.5%;
+    background-color: #ef000f;
+    text-decoration: none;
+}
+
+#empty a:hover {
+    background-color: rgba(239, 0, 15, 0.8);
+}

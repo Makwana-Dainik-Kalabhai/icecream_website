@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Footer All Links */
+#footer1 {
+    display: flex;
+    width: 100%;
+    padding: 1%;
+    position: relative;
+    background: linear-gradient(white, #f2f2f2);
+    font-size: 30px;
+    border-top: 1.5px solid #ef000f;
+}
+
+#logo {
+    width: 450px;
+    padding: 1.5% 7%;
+}
+
+#logo img {
+    width: 100%;
+}
+
+/* Choose your favourite */
+#all_links {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* > is used to select immediate child */
+#all_links>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1%;
+}
+
+#footer1 a,
+#footer1 span {
+    display: block;
+    width: fit-content;
+    margin: 1% 0;
+}
+
+
+#all_links div span:first-child {
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+#all_links div a {
+    color: #ef000f;
+    font-size: 0.75em;
+    text-decoration: none;
+}
+
+#all_links a:hover {
+    font-weight: 500;
+}
+
+
+
+/* Customer Care */
+#cus_care {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#cus_care span {
+    font-size: 0.95em !important;
+    font-weight: 400 !important;
+}
+
+#cus_care span:last-child {
+    color: #ef000f;
+    font-size: 1em !important;
+}
+
+
+
+
+/* Office Address */
+#office_address span {
+    font-size: 0.75em;
+}
+
+#office_address span:last-child {
+    color: gray;
+    font-size: 0.7em;
+}
+
+
+
+
+
+
+/* Last Copy right and follow links */
+#footer2 {
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0.5% 0;
+    background-color: #ef000f;
+    font-size: 23px;
+}
+
+#copy_right {
+    font-size: 1em;
+}
+
+#follow_link {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+
+#follow_link a {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    color: white;
+    margin: 0 3%;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+#follow_link a:hover {
+    transition: 0.3s linear;
+    color: #ef000f;
+    background-color: white;
+}
+
+@media screen and (max-width: 1100px) {
+    #footer1 {
+        font-size: 28px;
+    }
+
+    #footer2 {
+        font-size: 22px;
+    }
+
+    #logo {
+        width: 350px;
+    }
+
+    #cus_care {
+        bottom: 0;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #footer1 {
+        font-size: 27px;
+    }
+
+    #footer2 {
+        font-size: 21px;
+    }
+
+    #logo {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    #footer1 {
+        font-size: 25px;
+    }
+
+    #footer2 {
+        font-size: 20px;
+    }
+
+    #follow_link a {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #footer1 {
+        font-size: 23px;
+    }
+
+    #footer2 {
+        font-size: 19px;
+    }
+
+    #logo {
+        width: 250px;
+    }
+
+    #follow_link span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #footer1 {
+        font-size: 22px;
+    }
+
+    #footer2 {
+        font-size: 18px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #all_links {
+        margin-left: 2%;
+    }
+
+    #follow_link a {
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #footer1 {
+        font-size: 21px;
+    }
+
+    #footer2 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #footer1 {
+        font-size: 20px;
+    }
+
+    #footer2 {
+        font-size: 16px;
+    }
+
+    #follow_link a {
+        width: 25px;
+        height: 25px;
+        border: 1.5px solid white;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #footer2 {
+        font-size: 14px;
+    }
+
+    #follow_link a {
+        width: 23px;
+        height: 23px;
+    }
+
+    #all_links {
+        flex-wrap: wrap;
+        height: fit-content;
+        margin: 0 1%;
+    }
+
+    #all_links>div {
+        width: fit-content;
+        padding: 3% 1%;
+    }
+
+    #cus_care {
+        position: relative;
+        margin-top: 12%;
+    }
+
+    #office_address span {
+        font-size: 0.8em;
+    }
+
+    #office_address span:last-child {
+        font-size: 0.75em;
+    }
+
+    #footer1 a,
+    #footer1 span {
+        margin: 0.5% 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #footer1 {
+        font-size: 18px;
+    }
+
+    #footer2 {
+        font-size: 14px;
+    }
+
+    #all_links {
+        padding: 0;
+    }
+
+    #follow_link a {
+        width: 20px;
+        height: 20px;
+        border: 1px solid white;
+    }
+
+    #cus_care span {
+        font-size: 0.85em !important;
+    }
+
+    #cus_care span:last-child {
+        font-size: 0.9em !important;
+    }
+
+    #office_address {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    #footer1 {
+        font-size: 16px;
+    }
+
+    #footer2 {
+        font-size: 13px;
+    }
+
+    #follow_link a {
+        width: 18px;
+        height: 18px;
+    }
+    #cus_care span:first-child {
+        font-weight: 500 !important;
+    }
+}
+
+@media screen and (max-width: 265px) {
+    #footer2 {
+        font-size: 12px;
+    }
+
+    #choose_fav {
+        margin-left: 8%;
+    }
+
+    #know_better {
+        margin-left: 8%;
+    }
+
+}
+
+@media screen and (max-width: 210px) {
+    #footer2 {
+        display: flex;
+        flex-direction: column;
+    }
+}

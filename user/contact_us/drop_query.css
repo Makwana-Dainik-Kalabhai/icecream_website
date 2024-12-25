@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contact_page {
+    font-size: 50px;
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+#contact_page #heading {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Playwrite BE VLG", cursive;
+    margin-top: 1.5%;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Left side company details */
+#company_details {
+    width: 600px;
+    flex-direction: column;
+    padding: 2%;
+    margin: 2%;
+    border: 2px solid #ef000f;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+#company_details img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#company_details #details {
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#company_details span {
+    color: black;
+    display: block;
+}
+
+#company_details #title {
+    color: #ef000f;
+    font-size: 0.5em;
+    font-weight: 500;
+}
+
+#company_details #reach_us {
+    font-size: 0.45em;
+    font-weight: 500;
+    margin-top: 1%;
+}
+
+#company_details #address {
+    color: gray;
+    font-size: 0.38em;
+}
+
+#company_details #number {
+    font-size: 0.4em;
+    margin-top: 7%;
+    margin-bottom: 0.5%;
+}
+
+#company_details #email {
+    font-size: 0.4em;
+}
+
+
+
+/* Right side contact Form */
+#contact_form {
+    width: 750px;
+    padding: 1%;
+    margin: 2%;
+    background-color: rgba(255, 204, 207, 0.5);
+    border-radius: 25px;
+}
+
+#contact_form h1 {
+    color: #ef000f;
+    font-size: 0.7em;
+    margin: 2% 0 0 2.5%;
+}
+
+#contact_form form {
+    padding: 1.5%;
+}
+
+#form_success span {
+    display: block;
+    color: green;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+#contact_form input,
+#contact_form textarea {
+    width: 45%;
+    padding: 1.3% 3%;
+    border: none;
+    font-size: 0.4em;
+    border-radius: 10px;
+}
+
+#contact_form input {
+    margin: 1% 1.5%;
+    width: 45%;
+}
+
+#contact_form textarea {
+    width: 95%;
+    margin: 3% 1.5%;
+}
+
+#contact_form input[type="submit"] {
+    float: right;
+    width: fit-content;
+    padding: 0.5% 5%;
+    margin-bottom: 1%;
+    font-size: 0.5em;
+    color: white;
+    background-color: #ef000f;
+}
+
+@media all and (max-width: 950px) {
+    #contact_page {
+        font-size: 45px;
+    }
+}
+
+@media all and (max-width: 850px) {
+    #contact_page {
+        font-size: 40px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    #contact_page {
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    #contact_page {
+        font-size: 30px;
+    }
+    #company_details {
+        border-radius: 15px;
+    }
+
+    #contact_form {
+        border-radius: 15px;
+    }
+    #contact_form input,
+    #contact_form textarea {
+        border-radius: 7px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #contact_page {
+        font-size: 40px;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #company_details {
+        width: 85%;
+        border-radius: 10px;
+        padding: 2%;
+        margin: 2% auto;
+    }
+    
+    #contact_form {
+        width: 85%;
+        border-radius: 10px;
+        padding: 2%;
+        margin: 2% auto;
+    }
+
+}
+
+@media all and (max-width: 360px) {
+    #contact_page {
+        font-size: 30px;
+    }
+
+    #contact_form h1 {
+        margin-left: 3.5%;
+    }
+
+    #contact_form form {
+        width: 100%;
+        padding: 0;
+    }
+
+    #contact_form input,
+    #contact_form textarea {
+        display: block;
+        width: 90%;
+        padding: 1% 3%;
+        border-radius: 5px;
+    }
+    #contact_form input {
+        margin: 3% auto !important;
+    }
+    
+    #contact_form textarea {
+        margin: 3% auto !important;
+    }
+    #contact_form input[type="submit"] {
+        margin-right: 3.5% !important;
+    }
+}

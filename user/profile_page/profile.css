@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 80vh;
+    font-size: 25px;
+    background-image: url("profile_bg.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+#fake_header {
+    height: 100px;
+}
+
+
+/* Header */
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-size: 37px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+header img {
+    margin: 0 2vw;
+    width: 65px;
+    height: 65px;
+    filter: contrast(150%);
+    outline: 0.15vw solid black;
+    outline-offset: 0.3vw;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: #e6000f;
+    font-size: 1em;
+    font-family: "Playwrite IS", cursive;
+}
+
+
+
+#profile_page {
+    display: flex;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(149, 157, 165, 0.5);
+}
+
+/* //! Profile Image */
+#profile_img {
+    margin: 4%;
+    padding: 5%;
+    width: 34%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background: linear-gradient(white, rgba(216, 236, 243, 0.8));
+    box-shadow: 0px 0px 20px 1px #cccccc;
+}
+
+#profile_img img {
+    width: 180px;
+    height: 180px;
+    filter: contrast(125%);
+    outline: 3.5px solid gray;
+    outline-offset: 7px;
+    border-radius: 50%;
+}
+
+#profile_img h1 {
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 15%;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+#profile_img span {
+    color: gray;
+    margin-top: 2%;
+    font-size: 0.75em;
+}
+
+
+/* Profile Form man div */
+#profile_form {
+    position: relative;
+    width: 100%;
+    padding: 5% 0;
+    overflow: hidden;
+}
+
+
+/* //! Operation for profile */
+#profile_operation {
+    width: 45%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 3%;
+    background-color: white;
+}
+
+#profile_operation button {
+    font-size: 0.7em;
+    border: none;
+    background-color: transparent;
+}
+
+#show_profile_btn {
+    padding-left: 1%;
+    padding-right: 3%;
+    text-align: left;
+}
+
+#edit_profile_btn {
+    padding-left: 2%;
+    padding-right: 1%;
+    text-align: right;
+}
+
+
+/* //! sliding underlie below buttons */
+#profile_operation #underline {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 49.5%;
+    height: 3px;
+    background-color: #ef000f;
+    z-index: 1;
+}
+
+#profile_operation::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #d9d9d9;
+}
+
+#profile_operation i {
+    color: #ef000f;
+    font-size: 0.85em;
+}
+
+
+
+/* //! Main Forms (Show Form & Edit Form) */
+form {
+    width: 100%;
+    padding: 3% 7% 3% 0;
+}
+
+#show_profile {
+    position: absolute;
+    left: 0;
+}
+
+#edit_profile {
+    position: absolute;
+    left: 100%;
+}
+
+#update_pic {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+table {
+    color: gray;
+    width: 100%;
+    margin-bottom: 6%;
+}
+
+td {
+    font-size: 1em;
+    font-weight: 600;
+    width: 0;
+    padding: 0.2% 0;
+}
+
+tr td:first-child,
+tr td:last-child {
+    padding: 0.3% 0;
+}
+
+tr:nth-child(odd) td {
+    padding: 0.6% 0;
+}
+
+tr td:first-child {
+    width: 30%;
+    font-size: 0.77em;
+    padding-left: 1.5%;
+    font-weight: 700;
+}
+
+tr td:last-child {
+    width: 60%;
+    font-size: 0.73em;
+    font-weight: normal;
+    padding-right: 1.5%;
+}
+
+
+table tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) td:first-child {
+    border-top-left-radius: 0.4vw;
+    border-bottom-left-radius: 0.4vw;
+}
+
+tr:nth-child(even) td:last-child {
+    border-top-right-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw;
+}
+
+
+/* Form-2 edit_profile */
+#edit_profile tr td:last-child {
+    line-height: 2;
+    align-items: center;
+}
+
+#edit_profile table input {
+    color: black;
+    font-size: 0.9em;
+    width: 100%;
+    height: 80%;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 0.3vw;
+    padding: 1.5% 2.5%;
+    padding-left: 1%;
+}
+
+#edit_profile textarea {
+    width: 100%;
+    padding: 1.5% 2.5%;
+    color: black;
+    font-size: 0.9em;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 0.3vw;
+    line-height: 1.2;
+}
+
+
+form #btns {
+    width: 100%;
+}
+
+input[type="submit"],
+#btns button,
+#show_profile #btns a {
+    width: fit-content;
+    height: 100%;
+    padding: 0 5%;
+    margin-right: 1vw;
+    border-radius: 0.3vw;
+    font-size: 0.85em;
+    color: #e6000f;
+    border: 2px solid #ef000f;
+    background-color: white;
+    text-decoration: none;
+}
+
+#show_profile #btns a {
+    height: 100%;
+    float: right;
+    color: white;
+    background-color: #ef000f;
+}
+
+input[type="submit"]:hover,
+#btns button:hover {
+    color: white;
+    background-color: #ef000f;
+    transition: 0.25s linear;
+}
+
+/* Edit profile link */
+#edit_profile #btns a {
+    font-size: 0.8em;
+}
+
+
+/* Update profile picture form */
+#update_pic {
+    width: 100%;
+    height: 100%;
+}
+
+#update_pic fieldset {
+    width: 100%;
+    padding: 4%;
+    margin: 5% 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    height: 50%;
+    font-size: 0.7em;
+}
+
+#update_pic button {
+    font-size: 0.75em;
+}
+
+
+/* //! Media Queries */
+@media all and (max-width: 1300px) {
+    body {
+        font-size: 23px;
+    }
+    header {
+        font-size: 35px;
+    }
+
+    #underline {
+        height: 2.5px;
+    }
+
+    #profile_page {
+        width: 65%;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    #profile_page {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    #profile_page {
+        width: 75%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    #profile_page {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 950px) {
+    body {
+        font-size: 21px;
+    }
+
+    header {
+        font-size: 32px;
+    }
+
+    header img {
+        width: 58px;
+        height: 58px;
+    }
+
+    #profile_img img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    #profile_page {
+        width: 85%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media all and (max-width: 800px) {
+    #profile_page {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 750px) {
+    body {
+        overflow: auto;
+    }
+    #profile_page {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #profile_img {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        flex-direction: row;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    #profile_img img {
+        outline: 2px solid gray;
+        border-radius: 5px;
+    }
+    #name {
+        padding-left: 5%;
+    }
+    #name h1 {
+        text-align: left;
+    }
+    #profile_form {
+        height: 100%;
+        padding: 5%;
+    }
+    #show_form {
+        padding: 5%;
+    }
+}
